@@ -1,0 +1,69 @@
+* {
+      box-sizing: border-box;
+    }
+    body { min-height: 100vh; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    #image-container {
+      text-align: center;
+      margin-bottom: 20px; /* Adicione uma margem inferior para separar a imagem do título */
+    }
+    
+    #button-container button {
+      margin: 10px;
+      padding: 12px 20px; 
+      font-size: 16px; 
+      border-radius: 10px;
+      background-color: violet;
+    }
+    
+    #button-container button {
+      margin: 10px;
+    }
+    
+    /* Propriedades adicionais para o botão 'Não' */
+    #button_sim,
+    #button_nao {
+      position: relative;
+    }
+    #button_nao {
+      margin-left: 20px;
+    }
+
+    /* Define e modifica a fonte do H1 para Comic Sans */
+    h1 {
+      color: white;
+      text-shadow: 3px 3px black;
+      margin-top: 0;
+      font-family: "Comic Sans MS", cursive;
+      text-align: center; /* Centralize o texto */
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://i.pinimg.com/736x/ec/1a/75/ec1a751e123571baa0a33df87a3fc055.jpg'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+    
+    #image-container,
+    #button-container,
+    h1 {
+      position: relative;
+      z-index: 1;
+    }
